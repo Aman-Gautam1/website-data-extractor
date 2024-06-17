@@ -1,0 +1,17 @@
+#create database
+create database scraping;
+
+
+# using database 
+use scraping;
+
+# creating table 
+CREATE TABLE site_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(255) NOT NULL,
+    meta_title VARCHAR(255),
+    meta_description TEXT,
+    tech_stack TEXT,
+    payment_gateways TEXT,
+    social_media_links TEXT
+);
